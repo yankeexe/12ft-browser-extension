@@ -1,15 +1,14 @@
 {
 	"name": "12ft",
 	"description": "Remove Paywalls using 12ft ladder",
-	"version": "0.4",
+	"version": "0.5",
 	"author": "Yankee Maharjan",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"background": {
-		"scripts": ["main.js"],
-		"persistent": false
+		"service_worker": "main.js"
 	},
 	"permissions": ["activeTab"],
-	"browser_action": {
+	"action": {
 		"default_icon": {
 			"16": "assets/16x16.png",
 			"48": "assets/48x48.png",

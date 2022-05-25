@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(() => {
+chrome.action.onClicked.addListener(() => {
 	chrome.tabs.query(
 		{ currentWindow: true, active: true },
 		function (tab) {
